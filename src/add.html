@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend-baserad Webbutveckling</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            
+            <a href="#maincontent" class="skiplink button">Gå till huvudinnehåll</a>
+            <a href="index.html">
+                <h1>Backend-baserad webbutveckling - DT207G</h1>
+            </a>
+            <p>Moment 3</p>
+            <noscript><p>Den här webbsidan kommer inte att fungera korrekt eftersom du inte har aktiverat javascript.</p></noscript>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Start</a></li>
+                <li class="current"><a href="add.html">Lägg till jobb</a></li>
+                <li><a href="about.html">Om sidan</a></li>
+            </ul>
+        </nav>
+        <main id="maincontent">
+            <h2>Lägg till jobb</h2>
+            <p>Använd formuläret nedan för att lägga till ett jobb.</p>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Lägg till jobb:</legend>
+                    <label for="companyname">Företagets namn:</label>
+                    <input type="text" id="companyname" name="companyname" maxlength="32" required><br>
+                    <label for="jobtitle">Yrkestitel:</label>
+                    <input type="text" id="jobtitle" name="jobtitle" maxlength="64" required><br>
+                    <label for="location">Stad:</label>
+                    <input type="text" id="location" name="location" maxlength="32" required><br>
+                    <label for="startdate">Anställningens startdatum:</label>
+                    <input type="date" id="startdate" name="startdate" required><br>
+                    <label for="enddate">Anställningens slutdatum:</label>
+                    <input type="date" id="enddate" name="enddate" required><br>
+                    <label for="description">Arbetsuppgifter:</label>
+                    <input type="text" id="description" name="description" maxlength="128" required><br>
+                    <br>
+                    <span id="jobmessage"></span>
+                    <input type="reset" class="button" value="Rensa formulär">
+                    <input type="submit" id="submitjob" class="button" value="Lägg till">
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p>Webbplats skapad som en del av <a
+                    href="https://www.miun.se/utbildning/kursplaner-och-utbildningsplaner/DT207G">Backend-baserad
+                    webbutveckling</a> av <a href="mailto:lier2209@student.miun.se">Linn Eriksson</a>.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/add.js"></script>
+</body>
+</html>
